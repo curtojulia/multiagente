@@ -1,12 +1,14 @@
 Verificador de Código IA
-Visão Geral
+
+# Visão Geral
 O "Verificador de Código IA" é uma aplicação web construída utilizando o framework Streamlit. O sistema permite que os usuários colem um trecho de código e escolham entre três funcionalidades: gerar um arquivo README.md, analisar a segurança do código, ou otimizar a performance do código. A aplicação integra três agentes inteligentes, cada um especializado em uma dessas áreas.
 
-Funcionalidades
-Gerar README.md: Cria uma documentação do códigocom base no que foi colado pelo usuário.
-Analisar Segurança: Verifica o código em busca de vulnerabilidades de segurança.
-Otimizar Performance: Analisa o código e sugere melhorias para otimização de performance.
-Estrutura do Código
+# Funcionalidades
+- Gerar README.md: Cria uma documentação do códigocom base no que foi colado pelo usuário.
+- Analisar Segurança: Verifica o código em busca de vulnerabilidades de segurança.
+- Otimizar Performance: Analisa o código e sugere melhorias para otimização de performance.
+  
+# Estrutura do Código
 Importação de Módulos: O código importa bibliotecas essenciais como streamlit, os, dotenv e módulos personalizados que implementam os agentes para documentação, performance e segurança.
 
 Carregamento das Chaves de API: O uso do dotenv permite carregar variáveis de ambiente, como chaves de API que podem ser necessárias para a execução dos agentes.
@@ -19,16 +21,17 @@ Menu Lateral: O usuário pode escolher o que deseja fazer a partir de um menu la
 
 Execução da Análise: Dependendo da opção escolhida, a função executar_analise é chamada, que processa o código e utiliza os agentes correspondentes para gerar os resultados desejados.
 
-Requisitos
+# Requisitos
 Para executar este sistema, você precisará das seguintes bibliotecas e dependências:
 
-streamlit
-python-dotenv
-Módulos personalizados:
-documentador (deve conter a classe agente_documentacao)
-performance (deve conter a classe agente_performance)
-seguranca (deve conter a classe agente_seguranca)
-Como instalar as dependências
+- streamlit
+- python-dotenv
+- Módulos personalizados:
+  documentador (deve conter a classe agente_documentacao)
+  performance (deve conter a classe agente_performance)
+  seguranca (deve conter a classe agente_seguranca)
+
+# Como instalar as dependências
 Você pode instalar as bibliotecas necessárias usando os seguintes comandos em seu terminal:
 
 No Linux
